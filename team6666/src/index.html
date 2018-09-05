@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="nav">
+            <li>未使用</li>
+            <li>已使用</li>
+            <li>已过期</li>
+        </ul>
+        <div class="con">
+            <ul>
+                <li><img src="img/1.png" alt=""></li>
+                <li><img src="img/1.png" alt=""></li>
+                <li><img src="img/1.png" alt=""></li>
+            </ul>
+            <ul>
+                <li><img src="img/2.png" alt=""></li>
+                <li><img src="img/2.png" alt=""></li>
+                <li><img src="img/2.png" alt=""></li>
+            </ul>
+            <ul>
+                <li><img src="img/3.png" alt=""></li>
+                <li><img src="img/3.png" alt=""></li>
+                <li><img src="img/3.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(".nav").on("click", "li", function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    </script>
+
+</body>
+
+</html>

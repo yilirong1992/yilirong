@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    li {
+        width: 33.3%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        line-height: 50px;
+        float: left;
+    }
+}
+
+.active {
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+
+.con {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    li {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}
