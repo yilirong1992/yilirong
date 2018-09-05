@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="nav">
+            <li>未使用</li>
+            <li>已使用</li>
+            <li>已过期</li>
+        </ul>
+        <div class="con">
+            <ul class="ul">
+                <li>
+                    <img src="img/1.png" alt="">
+                </li>
+                <li>
+                    <img src="img/1.png" alt="">
+                </li>
+                <li>
+                    <img src="img/1.png" alt="">
+                </li>
+            </ul>
+            <ul class="ul">
+                <li>
+                    <img src="img/2.png" alt="">
+                </li>
+                <li>
+                    <img src="img/2.png" alt="">
+                </li>
+                <li>
+                    <img src="img/2.png" alt="">
+                </li>
+            </ul>
+            <ul class="ul">
+                <li>
+                    <img src="img/1.png" alt="">
+                </li>
+                <li>
+                    <img src="img/2.png" alt="">
+                </li>
+                <li>
+                    <img src="img/3.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let navlis = document.querySelectorAll(".nav li");
+        let ul = document.querySelectorAll(".ul");
+        for (let i = 0; i < navlis.length; i++) {
+            navlis[i].onclick = () => {
+                //alert(1)
+                changeImg(i)
+            }
+        }
+
+        let changeImg = (index) => {
+            for (var j = 0; j < navlis.length; j++) {
+                ul[j].style.display = "none";
+                navlis[j].className = "";
+            }
+            ul[index].style.display = "block";
+            navlis[index].className = "active"
+        }
+    </script>
+</body>
+
+</html>
